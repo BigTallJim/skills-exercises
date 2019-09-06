@@ -4,6 +4,7 @@ server = TCPServer.new(2345)
 
 socket = server.accept
 they_said = ""
+
 until they_said == 'Exit' do
   socket.puts "What do you say?"
 
@@ -11,4 +12,5 @@ until they_said == 'Exit' do
 
   socket.puts "You said: #{they_said}. Goodbye!"
 end
+
 socket.close
