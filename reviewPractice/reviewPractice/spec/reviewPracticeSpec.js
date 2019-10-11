@@ -9,6 +9,11 @@ describe('ReviewPractice', function(){
     expect(reviewPractice.countRedMarks(testMark)).toEqual(1);
   });
 
+  it("check for two Red marks", function(){
+    testMark = "Red,Red";
+    expect(reviewPractice.countRedMarks(testMark)).toEqual(2);
+  });
+
   
   // beforeEach(function() {
   //   sudokuManager = new doneOrNot(sudokuMap);
