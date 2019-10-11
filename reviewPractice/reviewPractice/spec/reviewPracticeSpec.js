@@ -1,5 +1,14 @@
-describe('reviewPractice', function(){
-  
+describe('ReviewPractice', function(){
+
+  beforeEach(function() {
+    reviewPractice = new ReviewPractice();
+  });
+
+  it("check for one Red mark", function(){
+    testMark = "Red";
+    expect(reviewPractice.countRedMarks(testMark)).toEqual(1);
+  });
+
   
   // beforeEach(function() {
   //   sudokuManager = new doneOrNot(sudokuMap);
